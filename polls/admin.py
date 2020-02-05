@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Choice, Question
+from .models import Choice, Question, Suggestions
 
 #class QuestionAdmin(admin.ModelAdmin):
     #fields = ['pub_date', 'question_text']
@@ -24,3 +24,4 @@ class QuestionAdmin(admin.ModelAdmin):
 
 admin.site.register(Question, QuestionAdmin)
 admin.site.register(Choice)
+admin.site.register(Suggestions)
