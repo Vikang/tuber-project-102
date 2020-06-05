@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'tutorStatus',
     'tutorrequests',
     'tutorProfile',
+    'contactUs',
 ]
 
 MIDDLEWARE = [

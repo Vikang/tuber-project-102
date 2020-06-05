@@ -3,6 +3,7 @@ from request_help.models import HelpRequest
 from register.models import UserProfile
 from tutorProfile.forms import CreateNewList
 from register.models import TutorProfile
+from contactUs.forms import CreateNewList
 
 class BasicTests(TestCase):
     def test_isTrue(self):

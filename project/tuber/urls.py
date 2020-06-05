@@ -21,6 +21,7 @@ from django.contrib import admin
 from django.contrib.auth import views as auth_views
 from loginGoogle import views as core_views
 from register import views as register_views
+from contactUs import views as contactUs_views
 
 urlpatterns = [
     url(r'^$', core_views.home, name='home'),
@@ -34,5 +35,6 @@ urlpatterns = [
     path('editprofile/', register_views.editprofile, name='editprofile'),
     path('tutorrequests/', include('tutorrequests.urls'), name='tutorrequests'),
     path('becometutor/', include('register.urls')),
-    path('delete/<int:id>', register_views.deleteClass, name='delete')
+    path('delete/<int:id>', register_views.deleteClass, name='delete'),
+    path('contact/', contactUs_views.Contact, name='contact'),
 ]
