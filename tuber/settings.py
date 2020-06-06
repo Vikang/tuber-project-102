@@ -59,7 +59,7 @@ MIDDLEWARE = [
     'social_django.middleware.SocialAuthExceptionMiddleware',
 ]
 
-ROOT_URLCONF = 'tuber2.urls'
+ROOT_URLCONF = 'tuber.urls'
 
 TEMPLATES = [
     {
