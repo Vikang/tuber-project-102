@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
-import django_heroku
+#import django_heroku
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -25,7 +25,7 @@ SECRET_KEY = '-41s=j!&8$31=t!4vgr5pc1l7-@%e^7c0e=s^ta^@wxyl7x)34'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['tuber2.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -79,7 +79,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'tuber2.wsgi.application'
+WSGI_APPLICATION = 'tuber.wsgi.application'
 
 
 # Database
@@ -157,11 +157,11 @@ LOGIN_URL = 'login'
 LOGOUT_URL = 'login'
 LOGIN_REDIRECT_URL = 'register'
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '1082334821960-lftp219abmnac60jdu1qer3l7vbsmcda.apps.googleusercontent.com'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '54kP_jvEZcy1BJXV6BVQTy8a'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '433491604398-fohtprrj7suic3smbo896pjpji422frt.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'e5jw05zRUaN_ehJi8mG2yNMt'
 SOCIAL_AUTH_URL_NAMESPACE = 'social'
 SOCIAL_AUTH_GOOGLE_OAUTH2_AUTH_EXTRA_ARGUMENTS = {'approval_prompt': 'force'}
 
 GOOGLE_MAPS_API_KEY = 'AIzaSyDJ3OMK3ABdQ76t7u0y6yB6XaL0XMTYXN4'
 
-django_heroku.settings(locals(), test_runner=False)
+#django_heroku.settings(locals(), test_runner=False)
