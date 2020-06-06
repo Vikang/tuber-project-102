@@ -79,7 +79,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'tuber2.wsgi.application'
+WSGI_APPLICATION = 'tuber.wsgi.application'
 
 
 # Database
