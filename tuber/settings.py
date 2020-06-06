@@ -59,7 +59,7 @@ MIDDLEWARE = [
     'social_django.middleware.SocialAuthExceptionMiddleware',
 ]
 
-ROOT_URLCONF = 'tuber.urls'
+ROOT_URLCONF = 'tuber2.urls'
 
 TEMPLATES = [
     {
@@ -79,7 +79,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'tuber.wsgi.application'
+WSGI_APPLICATION = 'tuber2.wsgi.application'
 
 
 # Database
