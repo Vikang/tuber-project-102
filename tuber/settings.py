@@ -25,7 +25,7 @@ SECRET_KEY = '-41s=j!&8$31=t!4vgr5pc1l7-@%e^7c0e=s^ta^@wxyl7x)34'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [tuber2.herokuapp.com]
 
 
 # Application definition
