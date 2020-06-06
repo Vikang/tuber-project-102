@@ -31,10 +31,10 @@ urlpatterns = [
     url(r'^logout/$', auth_views.LoginView.as_view(), name='logout'),
     url(r'^request/', include('request_help.urls')),
     url(r'^tutorStatus/', include('tutorStatus.urls')),
+    url(r'^contactUs/', include('contactUs.urls')),
     path('register/', register_views.register, name="register"),
     path('editprofile/', register_views.editprofile, name='editprofile'),
     path('tutorrequests/', include('tutorrequests.urls'), name='tutorrequests'),
     path('becometutor/', include('register.urls')),
     path('delete/<int:id>', register_views.deleteClass, name='delete'),
-    path('contact/', contactUs_views.Contact, name='contact'),
 ]

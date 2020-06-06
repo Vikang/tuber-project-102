@@ -1,16 +1,18 @@
 from django.shortcuts import render
 from django.shortcuts import render, redirect, HttpResponse, get_object_or_404, HttpResponseRedirect
-from django.contrib.auth.forms import UserCreationForm
-from .models import *
+from django.urls import reverse
+
+from .forms import ContactForm
+
 from django.core.mail import EmailMessage
-from django.forms import ModelForm
-from django.template.loader import get_template
+from django.views.generic.edit import CreateView
+from django.contrib.auth.models import User
 
 # Create your views here.
 
 # Contact form view
 
-def Contact(request):
+def contact(request):
     Contact_Form = ContactForm
     if request.method == 'POST':
         form = Contact_Form(data=request.POST)
@@ -39,5 +41,10 @@ def Contact(request):
 
             email.send()
 
-            return redirect('tuber:success')
-    return render(request, 'tuber/contact.html', {'form':Contact_Form })
+            return render(request, 'request_help/sendinghelp.html')
+    return render(request, 'contactUs/contact.html', {'form':Contact_Form })
+
+# Contact received
+def contact_received(request):
+    #HelpRequest.user = request.user
+    return render(request, 'contactUs/sendingcontact.html')
